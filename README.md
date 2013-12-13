@@ -1,7 +1,5 @@
 Particles live wallpaper
 ======================================
-Take control of your money. It's easy.
---------------------------------------
 
 A live wallpaper featuring particle-like dots bouncing off each other and the walls.
 
