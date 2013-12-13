@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Particles</string>
+    <string name="number_pref">Amount of particles</string>
+    <string name="velocity_pref">Average velocity</string>
+    <string name="size_pref">Average size</string>
+    <string name="kurt_pref">Uniformness</string>
+    <string name="color_pref">Particle color</string>
+    <string name="background_pref">Background color</string>
+</resources>

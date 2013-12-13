@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:name="@string/number_pref"
+                        android:title="@string/number_pref"
+                        android:defaultValue="7"
+                        android:key="com.notriddle.balls.number_pref"
+                        android:inputType="number"/>
+    <EditTextPreference android:name="@string/velocity_pref"
+                        android:title="@string/velocity_pref"
+                        android:defaultValue="300"
+                        android:key="com.notriddle.balls.velocity_pref"
+                        android:inputType="number"/>
+    <EditTextPreference android:name="@string/size_pref"
+                        android:title="@string/size_pref"
+                        android:defaultValue="100"
+                        android:key="com.notriddle.balls.size_pref"
+                        android:inputType="number"/>
+    <EditTextPreference android:name="@string/kurt_pref"
+                        android:title="@string/kurt_pref"
+                        android:defaultValue="3"
+                        android:key="com.notriddle.balls.kurt_pref"
+                        android:inputType="number"/>
+    <EditTextPreference android:name="@string/background_pref"
+                        android:title="@string/background_pref"
+                        android:defaultValue="#222222"
+                        android:key="com.notriddle.balls.background_pref"/>
+    <EditTextPreference android:name="@string/background_pref"
+                        android:title="@string/color_pref"
+                        android:defaultValue="#33b5e5"
+                        android:key="com.notriddle.balls.color_pref"/>
+</PreferenceScreen>

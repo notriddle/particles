@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+
+apply plugin: 'android'
+
+Properties props = new Properties()
+props.load(new FileInputStream(
+    file(project.property("particles.properties"))
+))
+
+android {
+    compileSdkVersion 'android-19'
+    buildToolsVersion '19.0.0'
+
+    signingConfigs {
+        release {
+            storeFile file(props['keystore'])
+            storePassword props['keystore.password']
+            keyAlias props['keystore.alias']
+            keyPassword props['keystore.password']
+        }
+    }
+
+    buildTypes {
+        release {
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            consumerProguardFiles 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+}

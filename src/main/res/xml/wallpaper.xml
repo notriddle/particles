@@ -1,0 +1,5 @@
+<wallpaper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.notriddle.balls.Settings"
+    android:thumbnail="@drawable/thumbnail"
+/>
